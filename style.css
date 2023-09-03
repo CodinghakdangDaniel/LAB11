@@ -1,0 +1,39 @@
+* {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.container p {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#myName {
+    color: blue;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content-container {
+    text-align: center;
+    padding-top: 20px;
+    color: red;
+}
+
+.btn-container {
+    width: 500px;
+    height: 500px;
+}

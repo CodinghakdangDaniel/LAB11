@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LAB11</title>
+</head>
+<body>
+    <div class="container">
+        <p>안녕하세요,<span id=myName></span>님, 가위바위보 중에서 하나 골라주세요!</p>
+    </div>
+    
+    <div class="img-container">
+        <img id="rock" src="./img/rock.jpg" type="button" onclick="setInnerHTML()">
+        <img id="paper" src="./img/paper.jpg" type="button" onclick="setInnerHTML()">
+        <img id="scissors" src="./img/scissors.jpg" type="button" onclick="setInnerHTML()">
+    </div>
+    
+    <div class="content-container">
+        <div id="content1"></div>
+        <p id="content2"><p>
+        <div id="content3"></div>
+    </div>
+    
+    <div class="btn-container">
+        <button id="fightBtn">Fight Computer</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
