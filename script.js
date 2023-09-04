@@ -6,34 +6,61 @@ if (myName == null) {
 
 else (document.getElementById("myName").innerHTML = myName);
 
-var rock = document.getElementById("rock");
-var paper = document.getElementById("paper");
-var scissors = document.getElementById("scissors");
-
-
-function setInnerHTML() {
+function setInnerHTML1() {
     const content1 =    
     document.getElementById('content1');
-    content1.innerHTML = "<div style='color: red'>Rock</div>";
-    // content1.innerHTML = 'Rock';
+    content1.innerHTML = "rock";
 }
 
-    // const content2 =
-    // document.getElementById('content2')
+    // const content1 =
+    // document.getElementById('content1')
 
-    // content2.addEventListener('click',() =>{    
-    // document.getElemenyById('content2') = "Hello"
+    // rock.addEventListener('click',() =>{    
+    // document.getElemenyById('content1').innerHTML = "Rock"
     // });
+    
+
+function setInnerHTML2() {
+    const content2 =    
+    document.getElementById('content1');
+    // document.getElementById('content2');
+    content2.innerHTML = "paper";
+}
+
+function setInnerHTML3() {
+    const content3 =    
+    document.getElementById('content1');
+    content3.innerHTML = "scissors";
+}
+
+var rock = 1;
+var paper = 2;
+var scissors = 0;
 
 
-// function setInnerHTML() {
-//     const content2 =    
-//     document.getElementById('content1');
-//     content2.innerHTML = "<div style='color: red'>Scissors</div>";
-// }
+var array = [1, 2, 0];
+var randomValue = [Math.floor(Math.random() * array.length)];
 
-// function setInnerHTML() {
-//     const content3 =    
-//     document.getElementById('content1');
-//     content3.innerHTML = "<div style='color: red'>Paper</div>";
-// }
+const content4 =
+    document.getElementById('content4')
+
+const btn =
+    document.getElementById('fightBtn')
+
+
+
+btn.addEventListener('click', function () {
+   
+    if (rock === console.log(randomValue)) {
+        content4.innerHTML = "Computer chose: scissors";
+        document.getElementById('content5').innerHTML = "This game is a DRAW! <br> 무승부!";
+    }
+        else if (rock < console.log(randomValue)) {
+            content4.innerHTML = "Computer chose: paper";
+            document.getElementById('content5').innerHTML = "You LOSE <br> 패배!";
+    }
+        else {
+            content4.innerHTML = "Computer chose: scissors";
+            document.getElementById('content5').innerHTML = "You WIN <br> 승리!";
+        };
+})
