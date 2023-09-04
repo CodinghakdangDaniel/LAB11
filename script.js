@@ -12,55 +12,55 @@ function setInnerHTML1() {
     content1.innerHTML = "rock";
 }
 
-    // const content1 =
-    // document.getElementById('content1')
-
-    // rock.addEventListener('click',() =>{    
-    // document.getElemenyById('content1').innerHTML = "Rock"
-    // });
-    
-
 function setInnerHTML2() {
-    const content2 =    
+    const content1=    
     document.getElementById('content1');
-    // document.getElementById('content2');
-    content2.innerHTML = "paper";
+    content1.innerHTML = "paper";
 }
 
 function setInnerHTML3() {
-    const content3 =    
+    const content1 =    
     document.getElementById('content1');
-    content3.innerHTML = "scissors";
+    content1.innerHTML = "scissors";
 }
 
-var rock = 1;
-var paper = 2;
-var scissors = 0;
+var content4 = document.getElementById('content4')
 
+const btn = document.getElementById('fightBtn')
 
-var array = [1, 2, 0];
-var randomValue = [Math.floor(Math.random() * array.length)];
-
-const content4 =
-    document.getElementById('content4')
-
-const btn =
-    document.getElementById('fightBtn')
-
-
+// 1= rock 
+// 2= paper 
+// 0= scissors 
 
 btn.addEventListener('click', function () {
-   
-    if (rock === console.log(randomValue)) {
-        content4.innerHTML = "Computer chose: scissors";
+    const content1=    
+    document.getElementById('content1');
+    var array = [1, 2, 0];
+    var randomValue = Math.floor(Math.random() * array.length);
+    var comChoice;
+
+    switch (randomValue) {
+        case 1:
+            comChoice = 'rock';
+            break;
+        case 2:
+            comChoice = 'paper';
+            break;
+        case 0:
+            comChoice = 'scissors';
+            break;
+    }
+
+    if (content1.innerHTML === 'rock' && randomValue === 1 || content1.innerHTML === 'paper' && randomValue === 2 || content1.innerHTML === 'scissors' && randomValue === 0) {
+        document.getElementById('content4').innerHTML = "Computer chose: " + comChoice;
         document.getElementById('content5').innerHTML = "This game is a DRAW! <br> 무승부!";
     }
-        else if (rock < console.log(randomValue)) {
-            content4.innerHTML = "Computer chose: paper";
+        else if (content1.innerHTML === 'rock' && randomValue === 2 || content1.innerHTML === 'paper' && randomValue === 0 || content1.innerHTML === 'scissors' && randomValue === 1) {
+            document.getElementById('content4').innerHTML = "Computer chose: " + comChoice;
             document.getElementById('content5').innerHTML = "You LOSE <br> 패배!";
     }
-        else {
-            content4.innerHTML = "Computer chose: scissors";
+        else if (content1.innerHTML === 'rock' && randomValue === 0 || content1.innerHTML === 'paper' && randomValue === 1 || content1.innerHTML === 'scissors' && randomValue === 2) {
+            document.getElementById('content4').innerHTML = "Computer chose: " + comChoice;
             document.getElementById('content5').innerHTML = "You WIN <br> 승리!";
         };
 })
